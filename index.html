@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Mastermind</title>
+  </head>
+  <body class="dark">
+    <div class="container">
+      <div class="board">
+        <div class="restart-content">
+          <button class="restart-button">Relancer</button>
+        </div>
+        <ul class="trials"></ul>
+      </div>
+      <div class="color-list">
+        <h3>Voici les couleurs disponibles.</h3>
+        <h4 class="mobile">Taper sur une des couleurs pour les utiliser.</h4>
+        <h4 class="desktop">
+          Glissez les couleurs pour les utiliser
+        </h4>
+        <ul class="colors"></ul>
+      </div>
+      <div class="entry">
+        <h3>Entrez votre combinaison de couleurs.</h3>
+        <div>
+          <ul class="colors"></ul>
+          <div>
+            <button class="add-try-button">Valider</button>
+            <span class="remaining-trials"></span>
+          </div>
+        </div>
+        <span class="error"></span>
+      </div>
+      <div class="utils">
+        <button class="refresh-button">
+          <img src="/assets/img/arrow-refresh.svg" alt="arrow refresh" />
+        </button>
+        <button class="switch-theme">
+          <img class="dark" src="/assets/img/moon.svg" alt="moon" />
+          <img class="light" src="/assets/img/sun.svg" alt="sun" />
+        </button>
+      </div>
+    </div>
+
+    <script type = "module" src="main.js"></script>
+  </body>
+</html>
